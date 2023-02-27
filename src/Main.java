@@ -21,10 +21,12 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 1");
         int[] arr = generateRandomArray();
-        for (int i = 1; i < arr.length; i++) {
-            System.out.println("Сумма трат за " + i + "-й день составила " + arr[i] + " рублей");
+        int sum = 0;
+        for (int b = 0; b < arr.length; b++) {
+            sum += arr[b];
         }
-    }
+            System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+        }
 
     public static void task2() {
         System.out.println("Задача 2");
@@ -49,12 +51,13 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
         int[] arr = generateRandomArray();
-        double average = 0;
-        for (int i = 1; i < arr.length; i++) {
-            average += arr[i] / arr.length;
+        int sum = 0;
+        for (int c = 0; c < arr.length; c++) {
+            sum += arr[c];
+            }
+        double average = sum / arr.length;
+            System.out.println("Средняя сумма трат за день составила " + average + " рублей");
         }
-        System.out.println("Средняя сумма трат за день составила " + average + " рублей");
-    }
 
     public static void task4() {
         System.out.println("Задача 4");
